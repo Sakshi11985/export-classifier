@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+scrape_configs:
+  - job_name: api
+    metrics_path: /metrics
+    static_configs: [{targets: ["api:8000"]}]
+  # every worker replica: compose DNS returns one A record per replica of the `worker` service
+  - job_name: worker
+    metrics_path: /metrics
+    dns_sd_configs:
+      - names: ["worker"]
+        type: A
+        port: 9101
+        refresh_interval: 5s
+  - job_name: cadvisor
+    static_configs: [{targets: ["cadvisor:8080"]}]
+  - job_name: prometheus
+    static_configs: [{targets: ["localhost:9090"]}]

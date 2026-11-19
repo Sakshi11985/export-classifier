@@ -1,0 +1,26 @@
+{
+  "runs": 20,
+  "avg_prompt_tokens": 15428,
+  "avg_completion_tokens": 583,
+  "avg_llm_calls": 5.0,
+  "cost_per_100_runs_usd": 0.266408,
+  "largest_driver": {
+    "step": "classifier.plan",
+    "share_of_cost": 0.8801,
+    "share_of_tokens": 0.8703
+  },
+  "by_step_kind": {
+    "classifier.plan": {
+      "prompt_tokens": 267410,
+      "completion_tokens": 11300,
+      "cost_usd": 0.046891,
+      "calls": 80
+    },
+    "verifier.judge": {
+      "prompt_tokens": 41160,
+      "completion_tokens": 360,
+      "cost_usd": 0.00639,
+      "calls": 20
+    }
+  }
+}

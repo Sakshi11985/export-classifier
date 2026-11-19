@@ -1,0 +1,20 @@
+{
+  "cold": {
+    "runs": 10,
+    "p50_s": 5.147,
+    "p95_s": 5.451,
+    "cache_hits": 0,
+    "model_calls_made": 50,
+    "cost_usd_incurred": 0.0,
+    "tokens": 161300
+  },
+  "cached": {
+    "runs": 10,
+    "p50_s": 0.003,
+    "p95_s": 0.004,
+    "cache_hits": 10,
+    "model_calls_made": 0,
+    "cost_usd_incurred": 0.0,
+    "tokens": 0
+  }
+}

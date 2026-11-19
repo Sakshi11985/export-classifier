@@ -1,0 +1,3 @@
+# Optional: semantic embeddings (EMBEDDING_BACKEND=sentence-transformers). Large (pulls PyTorch).
+# NOT exercised by the automated tests in this repository (needs a model download); see docs/LIMITATIONS.md.
+sentence-transformers>=3,<6
